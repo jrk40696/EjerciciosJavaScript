@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio 14</title>
+</head>
+<body>
+    <script>
+    let numeroCorrecto = 7;
+    let num = null;
+
+    while (num !== numeroCorrecto) {
+        let dato = prompt('Adivina el número secreto entre el 1 y el 10');
+        num = parseInt(dato);
+
+        if (num === numeroCorrecto) {
+            document.write(`<h2>¡Felicidades! Has adivinado el número ${numeroCorrecto} correctamente.</h2>`);
+        } else {
+            document.write(`El número ${num} no es correcto. Inténtalo de nuevo.<br>`);
+        }
+    }
+</script>
+
+</body>
+</html>
